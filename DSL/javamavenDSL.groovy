@@ -39,7 +39,7 @@ job('Java Maven App DSL') {
             sendAs(null)
             commitInfoChoice('NONE')
             teamDomain(null)
-            authToken(null)*/
-       }
+            authToken(null)
+       }*/
     }
 }
