@@ -23,7 +23,8 @@ job('Java Maven App DSL 2') {
     publishers {
         archiveArtifacts('target/*.jar')
         archiveJunit('target/surefire-reports/*.xml')
-	slackNotifier {
+	mailer('juandavidnaranjo75@gmail.com', true, true)
+	/*slackNotifier {
             notifyAborted(true)
             notifyEveryFailure(true)
             notifyNotBuilt(false)
@@ -39,6 +40,6 @@ job('Java Maven App DSL 2') {
             commitInfoChoice('NONE')
             teamDomain(null)
             authToken(null)
-       }
+       }*/
     }
 }
